@@ -2,7 +2,7 @@
 # Hi, I'm Alega Cahya Saputra! 👋
 
 
-## Run Locally
+## bismillah
 
 Clone the project
 
