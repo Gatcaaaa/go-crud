@@ -2,7 +2,7 @@
 # Hi, I'm Alega Cahya Saputra! 👋
 
 
-## Run Locally
+## caraaaaaaaaaaaaa
 
 Clone the project
 
@@ -13,13 +13,13 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  iyaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 ```
 
 Install dependencies
 
 ```bash
-  npm install
+  lorem ipsum dolor sit amet, consectetur adipiscing
 ```
 
 Start the server
