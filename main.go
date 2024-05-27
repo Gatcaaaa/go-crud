@@ -21,6 +21,6 @@ func main() {
 	http.HandleFunc("/categories/edit", categorycontroller.Edit)
 	http.HandleFunc("/categories/delete", categorycontroller.Delete)
 
-	log.Println("Server started on port 8080")
+	log.Println("Server started on port 8000")
 	http.ListenAndServe(":8000", nil)
 }

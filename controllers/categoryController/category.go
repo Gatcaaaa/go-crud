@@ -4,6 +4,7 @@ import (
 	"go-init/entities"
 	categorymodel "go-init/models/categoryModel"
 	"net/http"
+	"strconv"
 	"text/template"
 	"time"
 )
@@ -46,7 +47,25 @@ func Add(w http.ResponseWriter, r *http.Request) {
 }
 
 func Edit(w http.ResponseWriter, r *http.Request) {
+	if r.Method == "GET" {
+		temp, err := template.ParseFiles("views/category/edit.html")
+		if err != nil {
+			panic(err)
+		}
 
+		idString := r.URL.Query().Get("id")
+		id, err := strconv.Atoi(idString)
+
+		if err != nil {
+			panic(err)
+		}
+		category := categorymodel.Detail(id)
+		data := map[string]any{
+			"category": category,
+		}
+
+		temp.Execute(w, data)
+	}
 }
 
 func Delete(w http.ResponseWriter, r *http.Request) {
